@@ -11,7 +11,7 @@
   
   <!-- Background and Title -->
   <rect width="1000" height="800" fill="url(#bg-gradient)" rx="10" ry="10" />
-  <text x="500" y="50" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">Peer-Cargo High-Level Architecture</text>
+  <text x="500" y="90" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">Peer-Cargo High-Level Architecture</text>
   
   <!-- Client Layer -->
   <rect x="50" y="110" width="900" height="90" rx="10" ry="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" />
@@ -112,15 +112,15 @@
   <rect x="50" y="30" width="20" height="20" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" />
   <text x="80" y="45" font-family="Arial" font-size="12" fill="#333">Client</text>
   
-  <rect x="150" y="30" width="20" height="20" fill="#fff3e0" stroke="#ff9800" stroke-width="1" />
-  <text x="180" y="45" font-family="Arial" font-size="12" fill="#333">API Gateway</text>
+  <rect x="120" y="30" width="20" height="20" fill="#fff3e0" stroke="#ff9800" stroke-width="1" />
+  <text x="145" y="45" font-family="Arial" font-size="12" fill="#333">API Gateway</text>
   
-  <rect x="250" y="30" width="20" height="20" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" />
-  <text x="280" y="45" font-family="Arial" font-size="12" fill="#333">Microservices</text>
+  <rect x="220" y="30" width="20" height="20" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" />
+  <text x="245" y="45" font-family="Arial" font-size="12" fill="#333">Microservices</text>
   
-  <rect x="350" y="30" width="20" height="20" fill="#e1f5fe" stroke="#03a9f4" stroke-width="1" />
-  <text x="380" y="45" font-family="Arial" font-size="12" fill="#333">Message Queue</text>
+  <rect x="327" y="30" width="20" height="20" fill="#e1f5fe" stroke="#03a9f4" stroke-width="1" />
+  <text x="350" y="45" font-family="Arial" font-size="12" fill="#333">Message Queue</text>
   
-  <rect x="450" y="30" width="20" height="20" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" />
-  <text x="480" y="45" font-family="Arial" font-size="12" fill="#333">Data Layer</text>
+  <rect x="445" y="30" width="20" height="20" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" />
+  <text x="470" y="45" font-family="Arial" font-size="12" fill="#333">Data Layer</text>
 </svg>
