@@ -8,6 +8,8 @@
 
 **🚀 Peer-Cargo** is your travel-powered delivery network — connecting everyday travelers (Carriers) with those who need to send something (Requesters). Whether you're flying across continents or commuting between cities, turn your spare luggage space into opportunity. Discover GlidePaths, drop your Parcels, chat via LinkLine, and complete trusted CargoQuests — all on one seamless platform.
 
+![HLD peer-cargo](./docs/hld-diagram.svg)
+
 ## Naming Convention
 
 | Concept          | Fancy Name     |
