@@ -1,4 +1,6 @@
-# <img src="./assets/logo.png" alt="Peer-Cargo Logo" width="50" /> Peer-Cargo 🚀
+# Peer-Cargo 🚀
+
+<img src="./assets/poster.png" alt="Peer-Cargo Logo" width="100" />
 
 > **Turn Trips into Tips!**
 
