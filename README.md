@@ -1,6 +1,6 @@
 # Peer-Cargo 🚀
 
-![Peer-Cargo Logo](./assets//logo.png)
+![Peer-Cargo Logo](./assets/logo.png){ width=100px }
 
 > **Turn Trips into Tips!**
 
