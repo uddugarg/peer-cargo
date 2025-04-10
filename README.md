@@ -69,7 +69,7 @@
 
 Peer-Cargo follows a microservices architecture to ensure scalability and maintainability.
 
-![Architecture Diagram](./docs/architecture-diagram.png)
+![Architecture Diagram](./docs/architecture-diagram.svg)
 
 ### Services Overview:
 
@@ -182,8 +182,8 @@ pnpm prisma db seed      # Seed the database with sample data
 │   └── seed.ts               # Seeding script
 │
 ├── docs/                     # Documentation
-│   ├── architecture-diagram.png
-│   └── hld-diagram.png
+│   ├── architecture-diagram.svg
+│   └── hld-diagram.svg
 │
 ├── docker/                   # Docker configuration
 │   ├── Dockerfile.frontend
