@@ -1,0 +1,126 @@
+<svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f0f4f8" />
+      <stop offset="100%" stop-color="#e6f7ff" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background and Title -->
+  <rect width="1000" height="800" fill="url(#bg-gradient)" rx="10" ry="10" />
+  <text x="500" y="50" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">Peer-Cargo High-Level Architecture</text>
+  
+  <!-- Client Layer -->
+  <rect x="50" y="110" width="900" height="90" rx="10" ry="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" />
+  <text x="500" y="140" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#0d47a1">Client Layer</text>
+  <rect x="100" y="150" width="180" height="30" rx="5" ry="5" fill="#bbdefb" stroke="#1e88e5" stroke-width="1" />
+  <text x="190" y="170" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Next.js Frontend</text>
+  <rect x="300" y="150" width="180" height="30" rx="5" ry="5" fill="#bbdefb" stroke="#1e88e5" stroke-width="1" />
+  <text x="390" y="170" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">React Components</text>
+  <rect x="500" y="150" width="180" height="30" rx="5" ry="5" fill="#bbdefb" stroke="#1e88e5" stroke-width="1" />
+  <text x="590" y="170" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">shadcn/ui + TailwindCSS</text>
+  <rect x="700" y="150" width="180" height="30" rx="5" ry="5" fill="#bbdefb" stroke="#1e88e5" stroke-width="1" />
+  <text x="790" y="170" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Framer Motion</text>
+  
+  <!-- API Gateway Layer -->
+  <rect x="50" y="220" width="900" height="60" rx="10" ry="10" fill="#fff3e0" stroke="#ff9800" stroke-width="2" />
+  <text x="500" y="255" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#e65100">API Gateway (NestJS)</text>
+  
+  <!-- Auth Layer -->
+  <rect x="50" y="300" width="900" height="60" rx="10" ry="10" fill="#fce4ec" stroke="#e91e63" stroke-width="2" />
+  <text x="500" y="335" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#880e4f">Authentication (Clerk)</text>
+  
+  <!-- Microservices Layer -->
+  <rect x="50" y="380" width="900" height="210" rx="10" ry="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" />
+  <text x="500" y="410" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#1b5e20">Microservices Layer</text>
+  
+  <!-- Individual Microservices -->
+  <rect x="80" y="430" width="150" height="70" rx="8" ry="8" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="155" y="465" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">GlidePath Service</text>
+  <text x="155" y="485" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Travel Itineraries</text>
+  
+  <rect x="250" y="430" width="150" height="70" rx="8" ry="8" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="325" y="465" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">DropParcel Service</text>
+  <text x="325" y="485" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Delivery Requests</text>
+  
+  <rect x="420" y="430" width="150" height="70" rx="8" ry="8" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="495" y="465" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Matchmaking Service</text>
+  <text x="495" y="485" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Matching Algorithm</text>
+  
+  <rect x="590" y="430" width="150" height="70" rx="8" ry="8" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="665" y="465" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">CargoQuest Engine</text>
+  <text x="665" y="485" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Delivery Management</text>
+  
+  <rect x="760" y="430" width="150" height="70" rx="8" ry="8" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="835" y="465" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Chat Gateway</text>
+  <text x="835" y="485" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Real-time Messaging</text>
+  
+  <rect x="165" y="510" width="150" height="70" rx="8" ry="8" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="240" y="545" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Notification Service</text>
+  <text x="240" y="565" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Alerts & Updates</text>
+  
+  <rect x="335" y="510" width="150" height="70" rx="8" ry="8" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="410" y="545" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Payment Service</text>
+  <text x="410" y="565" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Stripe Integration</text>
+  
+  <rect x="505" y="510" width="150" height="70" rx="8" ry="8" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="580" y="545" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Support Service</text>
+  <text x="580" y="565" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">PeerAid System</text>
+  
+  <rect x="675" y="510" width="150" height="70" rx="8" ry="8" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="750" y="545" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Admin Service</text>
+  <text x="750" y="565" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">MissionControl</text>
+  
+  <!-- Message Queue Layer -->
+  <rect x="50" y="610" width="900" height="60" rx="10" ry="10" fill="#e1f5fe" stroke="#03a9f4" stroke-width="2" />
+  <text x="500" y="645" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#01579b">Message Queue (Kafka)</text>
+  
+  <!-- Database Layer -->
+  <rect x="50" y="690" width="900" height="85" rx="10" ry="10" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" />
+  <text x="500" y="720" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#4a148c">Data Layer</text>
+  
+  <rect x="100" y="730" width="250" height="30" rx="5" ry="5" fill="#e1bee7" stroke="#8e24aa" stroke-width="1" />
+  <text x="225" y="750" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">PostgreSQL (Neon)</text>
+  
+  <rect x="375" y="730" width="250" height="30" rx="5" ry="5" fill="#e1bee7" stroke="#8e24aa" stroke-width="1" />
+  <text x="500" y="750" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Redis Cache</text>
+  
+  <rect x="650" y="730" width="250" height="30" rx="5" ry="5" fill="#e1bee7" stroke="#8e24aa" stroke-width="1" />
+  <text x="775" y="750" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">AWS S3 Storage</text>
+  
+  <!-- Connection Lines -->
+  <line x1="500" y1="200" x2="500" y2="220" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="500" y1="280" x2="500" y2="300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="500" y1="360" x2="500" y2="380" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="500" y1="590" x2="500" y2="610" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="500" y1="670" x2="500" y2="690" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Bidirectional arrow between Microservices and Message Queue -->
+  <line x1="150" y1="590" x2="150" y2="610" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="170" y1="610" x2="170" y2="590" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <line x1="850" y1="590" x2="850" y2="610" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="870" y1="610" x2="870" y2="590" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Logo -->
+  <image x="910" y="20" width="60" height="60" href="data:image/png;base64,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" />
+  
+  <!-- Legend -->
+  <rect x="50" y="30" width="20" height="20" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" />
+  <text x="80" y="45" font-family="Arial" font-size="12" fill="#333">Client</text>
+  
+  <rect x="150" y="30" width="20" height="20" fill="#fff3e0" stroke="#ff9800" stroke-width="1" />
+  <text x="180" y="45" font-family="Arial" font-size="12" fill="#333">API Gateway</text>
+  
+  <rect x="250" y="30" width="20" height="20" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" />
+  <text x="280" y="45" font-family="Arial" font-size="12" fill="#333">Microservices</text>
+  
+  <rect x="350" y="30" width="20" height="20" fill="#e1f5fe" stroke="#03a9f4" stroke-width="1" />
+  <text x="380" y="45" font-family="Arial" font-size="12" fill="#333">Message Queue</text>
+  
+  <rect x="450" y="30" width="20" height="20" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" />
+  <text x="480" y="45" font-family="Arial" font-size="12" fill="#333">Data Layer</text>
+</svg>
