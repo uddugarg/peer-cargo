@@ -60,7 +60,7 @@
   
   <rect x="165" y="510" width="150" height="70" rx="8" ry="8" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
   <text x="240" y="545" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Notification Service</text>
-  <text x="240" y="565" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Alerts & Updates</text>
+  <text x="240" y="565" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Alerts and Updates</text>
   
   <rect x="335" y="510" width="150" height="70" rx="8" ry="8" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
   <text x="410" y="545" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Payment Service</text>
@@ -106,7 +106,7 @@
   <line x1="870" y1="610" x2="870" y2="590" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
   
   <!-- Logo -->
-  <image x="910" y="20" width="60" height="60" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAB2AAAAdgB+lymcgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAWESURBVHic7ZtrbBRVFMd/Z2ZpS4stYEHKo1SBtsgj9QUIiCgKKCAKJGJEQyQYI0QTiSb6QRJN/KAJiRgRCRgJGAMRgRIeIYZHgAI1lEeptND0Ae1CW/qY2T3+sbPL7HZmd2d3Z3fp/pNJ7p177rnnf++9c+fMXBGlFMNZwlAHMNQaEvnARKX4CsGFCvqCeYCOQCm+FUHliSRPzVkBlXAwLRMu3gKKxvSqhjYoV6CUAgQkD1wRqFCKe3Hcd1wCnAzF+WTjsXxo88IH+1KofhBCSEKKVaLUWwBiF5RWjhX2b1SqY0wKFQfZElGAO4UhOWZRTkvk5P7pjfWb45IjMnxjbxqNPZCVDuNzoTgHCrNj48gI5DbgM4Uvjk3h+p/+8zIhOws8LfCtjzPLjdvyQU6kPRK8Z87c+9qKpdvdmVbVtO+pvl5WXO2Eohy4exJMvSM+DnvZ3QTVjTA+CXqV+s/TJeXudkY6FoyZtGT/rQ7JyE6HtWVQmm8zQMDhGjhe76/PMUHJaJg3DVKDbKauFf64CPsb4HS9v31iFsyeCHcXw9nMJJaWhK4Xz/iVl25Xo/PXMX36J87Ia4JLnXD8FjRaVuS+6VBaaANYBTWt+mOg87D3krFKswZLqgNONcGpZphRAB3N0NlhOO2VlD6ZXMeMtPLKWkfkXS5Aj68lLzOEsL0Vrg8gYMvpwCt3WPnaDaZY7bY0Q3aeRpNhRnLK6QQRYHmpY5mV0N0NLWZXeWGmNe+Snd0wJj9oYLVt8HuH1WuICpjlcNy+s9AawNkmtH5c1wEZ2f51g107zLcEcNHLXYOQnWZQPDvNXqkIVMCOKuOx8RY01MPYccFtHZHrjpqAWm9oW38FvNgQuH3ONPeXvgOOsRcPDiwN/6qOUYsD6J6aMTN0VygpgGnFwGXYVQtVjYFtcwaDsmvQHvxlRzoTc2fPXLW/o8G7S5S683E5fRLUdsHpVnPVl5Xl2y1+uhS47MRCONsEBQZf3T7obIe8UeExdDSHeO44ItZbWVnpUEqtdiTeGxXRRxdMDc9S3QDfVMLtDtAMl7Rtbfb2m5DmnQZDG78T0rxTpLnXIWldDslrS4jlR4LvLDN9AnxcCWcaDaZG3XQtZ8Qawwn8CxwDtgM7gN+GIrBoCLpT/LIOXXtMLh2LlPJXQojWAY/8a1rrM9VQaGHe9OVVkQYWbRLcUtqwtRq+3AMfbobjNRG6G6YyZMB64zFMGTiAWGfAdoQYH6sTrTW0t0FHO6QPfDscLTJIgKPHjcedOgNMpv+3Q/6R54edbvPj94y7FRHKUASW3BneAx3tcMqQBVmZkGQYvkUYbRIcBFLMhzhCKGjthbZ0yEiHnGxfW18ftHdi+nAnJRm8PY7EFTMNqASr3TKM5NUB3cLfxjRxygDHM2DLOYPxDAPBOxvgdp3BJz90dEJ3l36bG+Glx9CQFeKGTURJEFiGBF8CdHdBT7fObOpEmDgRUlINRtJXnp6hN3V16oe9vfrvdwwDwvFjzWUBbUPwUh2XGGDiPeHtNpaDfh/QBOgK0tQC6z6HPR+ZfUlJgS8TpJQopbBaFVIGnRFrOXmCDYdg7TxY9jAUGrLg4g3YeAT+agjgShAEsS7/LoCf62D973qyWvIg5HnMZeGlB6Akz2Bwo17utIX6YCSunwJ7gbJ78bGurGxA5NTDiQb7qxyWgBH7VVgQyWoZuN9HNSC0+JeOy/eMC3IxGKHDQQB2EgCwORUWFoVmC7YCPAZbpYB9yZA0Jg0mFUJaKvT16ZOg0QM3e6PjGMnDcwk6lQGxFDDkJywjGvEZMOIzYMRnwIjPgBGfASM+A0Z8Boz4DBjxGTDiM2DIf0H+F2AbUoUjulBgAAAAAElFTkSuQmCC" />
+  <!-- <image x="910" y="20" width="60" height="60" href="https://yourdomain.com/logo.png" /> -->
   
   <!-- Legend -->
   <rect x="50" y="30" width="20" height="20" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" />
