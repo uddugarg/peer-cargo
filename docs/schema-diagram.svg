@@ -1,0 +1,162 @@
+<svg viewBox="0 0 900 850" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="a" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#f1f8ff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#e1f5fe;stop-opacity:1" />
+        </linearGradient>
+        <marker id="b" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <path fill="#555" d="m0 0 10 3.5L0 7z" />
+        </marker>
+    </defs>
+    <path fill="#fff" d="M0 0h1000v850H0z" />
+    <text x="450" y="30" font-family="Arial" font-size="24" font-weight="bold"
+        text-anchor="middle" fill="#333">Peer-Cargo Database Schema</text>
+    <rect x="50" y="70" width="220" height="200" rx="5" ry="5" fill="#fff" stroke="#2196f3" stroke-width="2" />
+    <rect x="50" y="70" width="220" height="30" rx="5" ry="5" fill="url(#a)" stroke="#2196f3" stroke-width="2" /><text
+        x="160" y="90" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle"
+        fill="#333">User</text>
+    <path stroke="#2196f3" d="M50 100h220" /><text x="60" y="120" font-family="Arial" font-size="12" fill="#333">id:
+        String @id @default(cuid())</text><text x="60" y="140" font-family="Arial" font-size="12" fill="#333">clerkId:
+        String @unique</text><text x="60" y="160" font-family="Arial" font-size="12" fill="#333">email: String
+        @unique</text><text x="60" y="180" font-family="Arial" font-size="12" fill="#333">firstName: String?</text><text
+        x="60" y="200" font-family="Arial" font-size="12" fill="#333">lastName: String?</text><text x="60" y="220"
+        font-family="Arial" font-size="12" fill="#333">imageUrl: String?</text><text x="60" y="240" font-family="Arial"
+        font-size="12" fill="#333">createdAt: DateTime @default(now())</text><text x="60" y="260" font-family="Arial"
+        font-size="12" fill="#333">updatedAt: DateTime @updatedAt</text>
+    <rect x="50" y="310" width="220" height="240" rx="5" ry="5" fill="#fff" stroke="#4caf50" stroke-width="2" />
+    <rect x="50" y="310" width="220" height="30" rx="5" ry="5" fill="url(#a)" stroke="#4caf50" stroke-width="2" /><text
+        x="160" y="330" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle"
+        fill="#333">GlidePath</text>
+    <path stroke="#4caf50" d="M50 340h220" /><text x="60" y="360" font-family="Arial" font-size="12" fill="#333">id:
+        String @id @default(cuid())</text><text x="60" y="380" font-family="Arial" font-size="12" fill="#333">userId:
+        String</text><text x="60" y="400" font-family="Arial" font-size="12" fill="#333">originCity: String</text><text
+        x="60" y="420" font-family="Arial" font-size="12" fill="#333">destinationCity: String</text><text x="60" y="440"
+        font-family="Arial" font-size="12" fill="#333">departureDate: DateTime</text><text x="60" y="460"
+        font-family="Arial" font-size="12" fill="#333">arrivalDate: DateTime</text><text x="60" y="480"
+        font-family="Arial" font-size="12" fill="#333">transportMode: String</text><text x="60" y="500"
+        font-family="Arial" font-size="12" fill="#333">availableSpace: String</text><text x="60" y="520"
+        font-family="Arial" font-size="12" fill="#333">availableWeight: String</text><text x="60" y="540"
+        font-family="Arial" font-size="12" fill="#333">status: String @default(&quot;active&quot;)</text>
+    <rect x="320" y="70" width="220" height="260" rx="5" ry="5" fill="#fff" stroke="#ff9800" stroke-width="2" />
+    <rect x="320" y="70" width="220" height="30" rx="5" ry="5" fill="url(#a)" stroke="#ff9800" stroke-width="2" /><text
+        x="430" y="90" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle"
+        fill="#333">DropParcel</text>
+    <path stroke="#ff9800" d="M320 100h220" /><text x="330" y="120" font-family="Arial" font-size="12" fill="#333">id:
+        String @id @default(cuid())</text><text x="330" y="140" font-family="Arial" font-size="12" fill="#333">userId:
+        String</text><text x="330" y="160" font-family="Arial" font-size="12" fill="#333">title: String</text><text
+        x="330" y="180" font-family="Arial" font-size="12" fill="#333">description: String</text><text x="330" y="200"
+        font-family="Arial" font-size="12" fill="#333">originCity: String</text><text x="330" y="220"
+        font-family="Arial" font-size="12" fill="#333">destinationCity: String</text><text x="330" y="240"
+        font-family="Arial" font-size="12" fill="#333">preferredDate: DateTime</text><text x="330" y="260"
+        font-family="Arial" font-size="12" fill="#333">size: String</text><text x="330" y="280" font-family="Arial"
+        font-size="12" fill="#333">weight: String</text><text x="330" y="300" font-family="Arial" font-size="12"
+        fill="#333">isFragile: Boolean @default(false)</text><text x="330" y="320" font-family="Arial" font-size="12"
+        fill="#333">status: String @default(&quot;pending&quot;)</text>
+    <rect x="320" y="370" width="220" height="220" rx="5" ry="5" fill="#fff" stroke="#9c27b0" stroke-width="2" />
+    <rect x="320" y="370" width="220" height="30" rx="5" ry="5" fill="url(#a)" stroke="#9c27b0" stroke-width="2" /><text
+        x="430" y="390" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle"
+        fill="#333">Match</text>
+    <path stroke="#9c27b0" d="M320 400h220" /><text x="330" y="420" font-family="Arial" font-size="12" fill="#333">id:
+        String @id @default(cuid())</text><text x="330" y="440" font-family="Arial" font-size="12"
+        fill="#333">glidePathId: String</text><text x="330" y="460" font-family="Arial" font-size="12"
+        fill="#333">dropParcelId: String</text><text x="330" y="480" font-family="Arial" font-size="12"
+        fill="#333">matchScore: Int</text><text x="330" y="500" font-family="Arial" font-size="12" fill="#333">status:
+        String @default(&quot;proposed&quot;)</text><text x="330" y="520" font-family="Arial" font-size="12"
+        fill="#333">requesterAccepted: Boolean @default(false)</text><text x="330" y="540" font-family="Arial"
+        font-size="12" fill="#333">carrierAccepted: Boolean @default(false)</text><text x="330" y="560"
+        font-family="Arial" font-size="12" fill="#333">createdAt: DateTime @default(now())</text><text x="330" y="580"
+        font-family="Arial" font-size="12" fill="#333">updatedAt: DateTime @updatedAt</text>
+    <rect x="590" y="70" width="260" height="280" rx="5" ry="5" fill="#fff" stroke="#03a9f4" stroke-width="2" />
+    <rect x="590" y="70" width="260" height="30" rx="5" ry="5" fill="url(#a)" stroke="#03a9f4" stroke-width="2" /><text
+        x="720" y="90" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle"
+        fill="#333">CargoQuest</text>
+    <path stroke="#03a9f4" d="M590 100h260" /><text x="600" y="120" font-family="Arial" font-size="12" fill="#333">id:
+        String @id @default(cuid())</text><text x="600" y="140" font-family="Arial" font-size="12" fill="#333">matchId:
+        String @unique</text><text x="600" y="160" font-family="Arial" font-size="12" fill="#333">glidePathId:
+        String</text><text x="600" y="180" font-family="Arial" font-size="12" fill="#333">dropParcelId:
+        String</text><text x="600" y="200" font-family="Arial" font-size="12" fill="#333">trackingId: String
+        @unique</text><text x="600" y="220" font-family="Arial" font-size="12" fill="#333">status: String
+        @default(&quot;pending&quot;)</text><text x="600" y="240" font-family="Arial" font-size="12"
+        fill="#333">pickupCode: String?</text><text x="600" y="260" font-family="Arial" font-size="12"
+        fill="#333">deliveryCode: String?</text><text x="600" y="280" font-family="Arial" font-size="12"
+        fill="#333">paymentStatus: String @default(&quot;pending&quot;)</text><text x="600" y="300" font-family="Arial"
+        font-size="12" fill="#333">paymentAmount: Float?</text><text x="600" y="320" font-family="Arial" font-size="12"
+        fill="#333">pickupDate: DateTime?</text><text x="600" y="340" font-family="Arial" font-size="12"
+        fill="#333">deliveryDate: DateTime?</text>
+    <rect x="590" y="370" width="220" height="180" rx="5" ry="5" fill="#fff" stroke="#673ab7" stroke-width="2" />
+    <rect x="590" y="370" width="220" height="30" rx="5" ry="5" fill="url(#a)" stroke="#673ab7" stroke-width="2" /><text
+        x="700" y="390" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle"
+        fill="#333">Message</text>
+    <path stroke="#673ab7" d="M590 400h220" /><text x="600" y="420" font-family="Arial" font-size="12" fill="#333">id:
+        String @id @default(cuid())</text><text x="600" y="440" font-family="Arial" font-size="12" fill="#333">matchId:
+        String</text><text x="600" y="460" font-family="Arial" font-size="12" fill="#333">senderId: String</text><text
+        x="600" y="480" font-family="Arial" font-size="12" fill="#333">text: String</text><text x="600" y="500"
+        font-family="Arial" font-size="12" fill="#333">status: String @default(&quot;sent&quot;)</text><text x="600"
+        y="520" font-family="Arial" font-size="12" fill="#333">createdAt: DateTime @default(now())</text><text x="600"
+        y="540" font-family="Arial" font-size="12" fill="#333">updatedAt: DateTime @updatedAt</text>
+    <rect x="590" y="570" width="220" height="180" rx="5" ry="5" fill="#fff" stroke="#e91e63" stroke-width="2" />
+    <rect x="590" y="570" width="220" height="30" rx="5" ry="5" fill="url(#a)" stroke="#e91e63" stroke-width="2" /><text
+        x="700" y="590" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle"
+        fill="#333">Transaction</text>
+    <path stroke="#e91e63" d="M590 600h220" /><text x="600" y="620" font-family="Arial" font-size="12" fill="#333">id:
+        String @id @default(cuid())</text><text x="600" y="640" font-family="Arial" font-size="12" fill="#333">userId:
+        String</text><text x="600" y="660" font-family="Arial" font-size="12" fill="#333">cargoQuestId: String
+        @unique</text><text x="600" y="680" font-family="Arial" font-size="12" fill="#333">amount: Float</text><text
+        x="600" y="700" font-family="Arial" font-size="12" fill="#333">paymentMethod: String</text><text x="600" y="720"
+        font-family="Arial" font-size="12" fill="#333">status: String @default(&quot;pending&quot;)</text>
+    <rect x="320" y="610" width="220" height="180" rx="5" ry="5" fill="#fff" stroke="#ffc107" stroke-width="2" />
+    <rect x="320" y="610" width="220" height="30" rx="5" ry="5" fill="url(#a)" stroke="#ffc107" stroke-width="2" /><text
+        x="430" y="630" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle"
+        fill="#333">Notification</text>
+    <path stroke="#ffc107" d="M320 640h220" /><text x="330" y="660" font-family="Arial" font-size="12" fill="#333">id:
+        String @id @default(cuid())</text><text x="330" y="680" font-family="Arial" font-size="12" fill="#333">userId:
+        String</text><text x="330" y="700" font-family="Arial" font-size="12" fill="#333">type: String</text><text
+        x="330" y="720" font-family="Arial" font-size="12" fill="#333">title: String</text><text x="330" y="740"
+        font-family="Arial" font-size="12" fill="#333">content: String</text><text x="330" y="760" font-family="Arial"
+        font-size="12" fill="#333">isRead: Boolean @default(false)</text><text x="330" y="780" font-family="Arial"
+        font-size="12" fill="#333">linkUrl: String?</text>
+    <rect x="50" y="570" width="220" height="180" rx="5" ry="5" fill="#fff" stroke="#009688" stroke-width="2" />
+    <rect x="50" y="570" width="220" height="30" rx="5" ry="5" fill="url(#a)" stroke="#009688" stroke-width="2" /><text
+        x="160" y="590" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle"
+        fill="#333">SupportTicket</text>
+    <path stroke="#009688" d="M50 600h220" /><text x="60" y="620" font-family="Arial" font-size="12" fill="#333">id:
+        String @id @default(cuid())</text><text x="60" y="640" font-family="Arial" font-size="12" fill="#333">userId:
+        String</text><text x="60" y="660" font-family="Arial" font-size="12" fill="#333">subject: String</text><text
+        x="60" y="680" font-family="Arial" font-size="12" fill="#333">description: String</text><text x="60" y="700"
+        font-family="Arial" font-size="12" fill="#333">status: String @default(&quot;open&quot;)</text><text x="60"
+        y="720" font-family="Arial" font-size="12" fill="#333">priority: String @default(&quot;medium&quot;)</text>
+    <path stroke="#555" stroke-width="1.5" marker-end="url(#b)" d="M160 270v40" /><text x="170" y="290"
+        font-family="Arial" font-size="10" fill="#333">1:n</text>
+    <path stroke="#555" stroke-width="1.5" marker-end="url(#b)" d="M270 170h50" /><text x="290" y="160"
+        font-family="Arial" font-size="10" text-anchor="middle" fill="#333">1:n</text>
+    <path stroke="#555" stroke-width="1.5" marker-end="url(#b)" d="M270 450h50" /><text x="290" y="440"
+        font-family="Arial" font-size="10" text-anchor="middle" fill="#333">1:n</text>
+    <path stroke="#555" stroke-width="1.5" marker-end="url(#b)" d="M430 330v40" /><text x="440" y="350"
+        font-family="Arial" font-size="10" fill="#333">1:n</text>
+    <path stroke="#555" stroke-width="1.5" marker-end="url(#b)" d="m540 450 50-250" /><text x="560" y="300"
+        font-family="Arial" font-size="10" text-anchor="middle" fill="#333">1:1</text>
+    <path stroke="#555" stroke-width="1.5" marker-end="url(#b)" d="M540 490h50" /><text x="565" y="480"
+        font-family="Arial" font-size="10" text-anchor="middle" fill="#333">1:n</text>
+    <path stroke="#555" stroke-width="1.5" marker-end="url(#b)" d="m270 200 330 260" /><text x="400" y="300"
+        font-family="Arial" font-size="10" text-anchor="middle" fill="#333">1:n</text>
+    <path stroke="#555" stroke-width="1.5" marker-end="url(#b)" d="m270 240 330 400" /><text x="400" y="400"
+        font-family="Arial" font-size="10" text-anchor="middle" fill="#333">1:n</text>
+    <path stroke="#555" stroke-width="1.5" marker-end="url(#b)" d="M720 350v220" /><text x="730" y="450"
+        font-family="Arial" font-size="10" fill="#333">1:1</text>
+    <path stroke="#555" stroke-width="1.5" marker-end="url(#b)" d="m160 270 170 410" /><text x="230" y="460"
+        font-family="Arial" font-size="10" text-anchor="middle" fill="#333">1:n</text>
+    <path stroke="#555" stroke-width="1.5" marker-end="url(#b)" d="M160 270v300" /><text x="170" y="400"
+        font-family="Arial" font-size="10" fill="#333">1:n</text>
+    <path fill="#fff" stroke="#2196f3" stroke-width="2" d="M30 40h15v15H30z" /><text x="50" y="52" font-family="Arial"
+        font-size="12" fill="#333">User</text>
+    <path fill="#fff" stroke="#4caf50" stroke-width="2" d="M100 40h15v15h-15z" /><text x="120" y="52"
+        font-family="Arial" font-size="12" fill="#333">GlidePath</text>
+    <path fill="#fff" stroke="#ff9800" stroke-width="2" d="M200 40h15v15h-15z" /><text x="220" y="52"
+        font-family="Arial" font-size="12" fill="#333">DropParcel</text>
+    <path fill="#fff" stroke="#9c27b0" stroke-width="2" d="M300 40h15v15h-15z" /><text x="320" y="52"
+        font-family="Arial" font-size="12" fill="#333">Match</text>
+    <path fill="#fff" stroke="#03a9f4" stroke-width="2" d="M370 40h15v15h-15z" /><text x="390" y="52"
+        font-family="Arial" font-size="12" fill="#333">CargoQuest</text>
+    <path stroke="#555" stroke-width="1.5" marker-end="url(#b)" d="m450 56 20-20" /><text x="480" y="50"
+        font-family="Arial" font-size="12" fill="#333">Relationship</text>
+</svg>
