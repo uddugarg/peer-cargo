@@ -1,0 +1,69 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="emptyBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f5f7fa" />
+            <stop offset="100%" stop-color="#e4e7eb" />
+        </linearGradient>
+        <filter id="emptyShadow" x="-10%" y="-10%" width="120%" height="120%">
+            <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.2" />
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="300" fill="white" />
+
+    <!-- Empty Box -->
+    <g filter="url(#emptyShadow)" transform="translate(150, 120)">
+        <!-- Box Base -->
+        <rect x="-50" y="-20" width="100" height="80" rx="5" fill="url(#emptyBgGradient)" stroke="#b0bec5"
+            stroke-width="2" stroke-dasharray="5,5" />
+
+        <!-- Box Lid (Open) -->
+        <path d="M-50,-20 L0,-40 L50,-20" fill="none" stroke="#b0bec5" stroke-width="2" stroke-dasharray="5,5" />
+
+        <!-- Question Mark -->
+        <text x="0" y="25" font-family="Arial, sans-serif" font-size="50" font-weight="bold" text-anchor="middle"
+            fill="#b0bec5">?</text>
+    </g>
+
+    <!-- Thought Bubble -->
+    <g transform="translate(210, 70)">
+        <circle cx="0" cy="0" r="15" fill="#e3f2fd" stroke="#90caf9" stroke-width="1" />
+        <circle cx="25" cy="-10" r="10" fill="#e3f2fd" stroke="#90caf9" stroke-width="1" />
+        <circle cx="40" cy="-20" r="6" fill="#e3f2fd" stroke="#90caf9" stroke-width="1" />
+
+        <!-- Small Package Icon in Thought Bubble -->
+        <rect x="-6" y="-6" width="12" height="12" rx="2" fill="#90caf9" />
+        <line x1="-6" y1="0" x2="6" y2="0" stroke="white" stroke-width="1" />
+        <line x1="0" y1="-6" x2="0" y2="6" stroke="white" stroke-width="1" />
+    </g>
+
+    <!-- Map Pin -->
+    <g transform="translate(90, 70)">
+        <path d="M0,0 C-15,0 -25,10 -25,25 C-25,40 0,60 0,60 C0,60 25,40 25,25 C25,10 15,0 0,0 Z" fill="#ef5350"
+            filter="url(#emptyShadow)" />
+        <circle cx="0" cy="25" r="8" fill="white" />
+    </g>
+
+    <!-- Some Decorative Dots -->
+    <circle cx="50" cy="200" r="5" fill="#bbdefb" />
+    <circle cx="70" cy="220" r="3" fill="#bbdefb" />
+    <circle cx="40" cy="230" r="4" fill="#bbdefb" />
+
+    <circle cx="350" cy="80" r="5" fill="#ffccbc" />
+    <circle cx="330" cy="60" r="3" fill="#ffccbc" />
+    <circle cx="360" cy="50" r="4" fill="#ffccbc" />
+
+    <circle cx="320" cy="220" r="5" fill="#c8e6c9" />
+    <circle cx="340" cy="240" r="3" fill="#c8e6c9" />
+    <circle cx="330" cy="260" r="4" fill="#c8e6c9" />
+
+    <!-- Text -->
+    <text x="200" y="220" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle"
+        fill="#546e7a">Nothing here yet</text>
+    <text x="200" y="240" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#78909c">Create your
+        first item to get started</text>
+
+    <!-- Dashed Circle Around Everything -->
+    <circle cx="200" cy="140" r="120" fill="none" stroke="#e0e0e0" stroke-width="2" stroke-dasharray="5,5" />
+</svg>
